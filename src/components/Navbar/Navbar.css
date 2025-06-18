@@ -1,0 +1,115 @@
+/* Navbar container */
+nav {
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3);
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+/* Search Bar */
+.search-bar {
+  width: 554.4px;
+  height: 49px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 24.5px;
+  padding: 4px 8px;
+  background-color: white;
+}
+
+.search-bar:focus-within {
+  background-color: #e3f2fd; /* Light blue background */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Actual input area */
+input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 16px;
+  padding: 6px 8px;
+  background-color: transparent;
+  box-sizing: border-box;
+  min-width: 0; /* This helps prevent overflow in flex layouts */
+  height: 100%;
+  width: 100%;
+}
+.search-bar:focus-within,
+.search-bar input:focus {
+  background-color: #e3f2fd; /* Light blue */
+  border-color: #2196f3; /* Slight color tweak */
+}
+
+/* When user clicks on input */
+input:focus {
+  outline: none;
+  background-color: white;
+}
+/* Search icon */
+.search {
+  position: relative;
+}
+.tool-tip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Left logo area */
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 200px;
+}
+
+.logo-area img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.logo-text {
+  font-size: 22px;
+  font-weight: 500;
+  color: #5f6368;
+  font-family: "Product Sans", Arial, sans-serif;
+  letter-spacing: -0.5px;
+}
+
+/* Menu icon styling */
+.hover:hover {
+  background: linear-gradient(to left, rgba(10, 25, 47, 0.9), rgba(12, 141, 192, 0.5));
+  backdrop-filter: blur(10px);
+  transition: background 0.3s ease-in-out;
+  cursor: pointer;
+  border-radius: 100%;
+}
+/* logos right */
+.settings-area {
+  display: flex;
+  flex-direction: row;
+  gap: 17px;
+}
+.profile-actions-area {
+  display: flex;
+  flex-direction: row;
+  gap: 17px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .logo-text {
+    display: none;
+  }
+  .logo-area {
+    min-width: auto;
+    gap: 8px;
+  }
+}

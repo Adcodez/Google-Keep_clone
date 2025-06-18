@@ -1,0 +1,129 @@
+/* MAIN FORM */
+.form-container {
+  background: #f7f6f9;
+  width: 600px;
+  height: auto;
+  margin: 32px auto;
+  border: 1px solid #e0e1e0;
+  border-radius: 8px;
+
+}
+.form-container:focus-within {
+  box-shadow: 0px 14px 18px rgba(0, 0, 0, 0.5);
+  
+  transition: box-shadow 0.2s ease-in-out 0.2s; /* Delayed effect */
+}
+.form-container form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  
+
+  
+}
+.note-title {
+  border: none;
+  font-size: 1rem;
+  height: 100%;
+  padding: 10px;
+  margin-left: 10px;
+  width: 93.5%;/* EXACT WIDTH NEEDED */
+  margin-right: 10px;
+  padding-left: 10px;
+  
+  
+}
+/* Removing default outline */
+.note-title:focus {
+  outline: none;
+}
+.note-text:focus {
+  outline: none;
+}
+.note-text {
+  border: none;
+  font-size: 1rem;
+  height: 100%;
+  padding: 10px;
+  margin-left: 10px;
+  width: 93.5%;
+  margin-right: 10px;
+  padding-left: 10px;
+}
+.form-actions {
+  display: flex;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+}
+
+.form .form-actions .icons {
+  display: flex;
+ 
+}
+.form .form-actions {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 5px;
+}
+.form-actions-closed{
+  display: flex;
+  gap: 22px;
+  justify-content: space-between;
+  width: 25%;
+  margin-top: 5px;
+  width: 200px;
+  margin-right: 12px;
+
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  position: relative;
+  width: 100px; /* thats all it took to display my button correctly...SERIOUSLY */
+  margin-right: 50px;
+
+  overflow-x: visable;
+}
+
+/* ICONS for FORMMM!!!!  */
+ .small-icon {
+  color: black;
+  font-size: 24px;
+  margin-right: 25px;
+  display: flex;
+  cursor: pointer;
+} 
+.small-icon:hover {
+  background: linear-gradient(135deg, rgba(192, 12, 129, 0.6), rgba(255, 255, 255, 0));
+  border-radius: 100%;
+  transition: background 0.3s ease-in-out;
+}
+
+  
+  
+
+
+
+/* Closed form icons */
+.closed-icon {
+  color: black;
+  font-size: 24px;
+  margin-right: 25px;
+  display: flex;
+  cursor: pointer;
+}
+.closed-icon:hover {
+background: linear-gradient(135deg, rgba(12, 93, 192, 0.6), rgba(193, 21, 21, 0.844));
+  border-radius: 100%;
+  
+}
